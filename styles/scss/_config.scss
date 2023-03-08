@@ -1,0 +1,67 @@
+$green: #00B495;
+$neutral-white: #ffffff;
+$neutral-off-white: #fffdf5;
+$light-brown: #ede7da;
+$dark-blue: #041e42;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin media-ss {
+    @media screen and (min-width: 0px) {
+        @content;
+    }
+}
+
+@mixin media-xs {
+    @media screen and (min-width: 350px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 936px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin media-sl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin general-button-design {
+    border-radius: 3rem;
+    border: solid 1px $dark-blue;
+}
+
+@mixin horizontal-scroll-grid {
+    display: grid;
+    grid-auto-flow: column;
+    // grid-gap: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+}

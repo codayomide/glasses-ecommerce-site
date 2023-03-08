@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@import 'config';
+@import 'nav';
+@import 'home';
+@import 'collections';
+@import 'individual-collection';
+@import 'individual-products';
+@import 'footer';
+@import 'responsiveness';
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $dark-blue;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-blue;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+
+    &.menu-opened {
+        position: fixed;
+    }
+}
+
+.top-info {
+    background-color: $green;
+    color: $neutral-white;
+    border-bottom: solid 1.5px $dark-blue;
+
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    
+    width: 100%;
+}
+
+.main {
+    color: $dark-blue;
+}
+
+.section-header {
+    font-size: 30px;
+}
+
+.hide {
+    display: none;
+}

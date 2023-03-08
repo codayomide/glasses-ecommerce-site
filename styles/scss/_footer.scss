@@ -1,0 +1,108 @@
+.footer {
+    background-color: $dark-blue;
+    color: $neutral-white;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: $neutral-white;
+    }
+
+    &__links-section {
+        // padding: 3.5rem 1rem;
+        display: grid;
+        // grid-template-columns: auto auto;
+        border-bottom: solid 1px $neutral-white;
+
+        a {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__subscribe-section {
+        border-bottom: solid 1px $neutral-white;
+        // padding: 2rem 1rem;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        &--form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            margin-top: 1rem;
+
+            input,
+            button {
+                font-size: 16px;
+            }
+
+            input {
+                padding: 0.5rem;
+                // width: 65%;
+
+                &::placeholder {
+                    font-weight: 500;
+                }
+            }
+
+            button {
+                padding: 0.8rem 1rem;
+                border-radius: 3rem;
+                border: solid 2px $neutral-white;
+                color: $neutral-white;
+                background-color: $dark-blue;
+                font-weight: 500;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: $neutral-white;
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        &--follow-us {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            // margin-top: 1.5rem;
+
+            & > div {
+                margin-top: 1rem;
+            }
+
+            img {
+                height: 40px;
+                width: 40px;
+                margin: 0 0.5rem;
+            }
+        }
+    }
+
+    &__address {
+        border-top: solid 1px $neutral-white;
+        text-align: center;
+        font-size: 22px;
+        // padding: 2rem 1rem;
+
+        // p {
+        //     margin-bottom: 2rem;
+        // }
+
+        .email {
+            text-decoration: underline;
+        }
+    }
+
+    .earth-img {
+        width: 200px;
+        height: 150px;
+        align-self: center;
+        margin-top: 1rem;
+    }
+}

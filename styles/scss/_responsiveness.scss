@@ -1,0 +1,855 @@
+@include media-ss {
+    .top-info {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .nav {
+        &__fixed {
+            padding: 1rem;
+        }
+
+        .menu-btn__container {
+            .menu-btn {
+                height: 22px;
+            }
+        }
+
+        &__fixed {
+            &--center {
+                .links {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        &__menu {
+            padding: 0 1rem;
+            background-color: $light-brown;
+
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            .dropdown {
+                .btn-content {
+                    width: 7.5rem;
+                }
+            }
+        }
+    }
+
+    #home {
+        #hero-section {
+            background: url('../../resources/images/hero-section/hero-section-img-mobile.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 500px;
+
+            &__text {
+                h1 {
+                    font-size: 40px;
+                }
+
+                button {
+                    padding: 1.2rem 2rem;
+                }
+            }
+        }
+
+        #about-us-section {
+            padding: 5rem 1rem 3rem 1rem;
+        }
+
+        #bestsellers-section {
+            .section-header {
+                margin: 1.5rem 1rem;
+            }
+
+            &__main {
+                grid-gap: 1rem;
+            }
+
+            &__button {
+                margin: 3rem 1rem 0 1rem;
+            }
+        }
+
+        .bestsellers {
+            width: 300px;
+
+            .name {
+                margin-top: 1.5rem;
+            }
+    
+            .price {
+                margin-top: 0.5rem;
+            }
+
+            &:first-child {
+                margin-left: 1rem;
+            }
+    
+            &:last-child {
+                margin-right: 1rem;
+            }
+        }
+
+        #make-a-difference-section {
+            padding: 5rem 1rem 2rem 1rem;
+
+            &__mission {
+                p {
+                    margin-bottom: 1rem;
+                }
+                
+                button {
+                    display: none;
+                }
+            }
+
+            &__illustrations {
+                img {
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        #stories-section {
+            .section-header {
+                margin: 1.5rem 1rem;
+            }
+
+            &__main {
+                grid-gap: 1rem;
+            }
+        }
+
+        .stories {
+            width: 300px;
+
+            &:first-child {
+                margin-left: 1rem;
+            }
+    
+            &:last-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .footer {
+        &__links-section {
+            padding: 3.5rem 1rem;
+            grid-template-columns: auto auto;
+        }
+
+        &__subscribe-section {
+            padding: 2rem 1rem;
+            margin-top: 1.5rem;
+
+            &--form {
+                input {
+                    width: 50%;
+                }
+            }
+        }
+
+        &__address {
+            padding: 2rem 1rem;
+
+            p {
+                margin-bottom: 2rem;
+            }
+
+            a {
+                display: block;
+            }
+        }
+    }
+
+    #glasses-collection {
+        .main {
+            padding: 2rem 1rem;
+        }
+
+        .collections-links {
+            width: 100%;
+        }
+    }
+
+    .individual-collection {
+        .main {
+            padding: 3rem 1rem;
+        }
+    }
+
+    .product-pages {
+        .product__main {
+            &--image-container {
+                width: 100%;
+                height: 30vh;
+            }
+
+            &--description-container {
+                margin: 2rem 1rem;
+            }
+        }
+    }
+
+    .product__review-section {
+        & > h2 {
+            margin-left: 1rem;
+        }
+
+        .product__review-container {
+            grid-gap: 1.5rem;
+        }
+    
+        .reviews {
+            width: 300px;
+    
+            &:first-child {
+                margin-left: 1rem;
+            }
+    
+            &:last-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@include media-xs {
+    .top-info {
+        padding: 0.5rem 2rem;
+    }
+
+    .nav {
+        &__fixed {
+            padding: 1rem 2rem;
+            border-bottom: solid 1.5px $dark-blue;
+
+            .menu-btn__container {
+                height: 100%;
+            }
+
+            &--center {
+                .logo__container {
+                        margin-bottom: 0.5rem;
+                    }
+            }
+        }
+
+        .menu-btn__container {
+            .menu-btn {
+                height: 22px;
+            }
+        }
+
+        &__menu {
+            padding: 0 2rem;
+        }
+    }
+
+    #home {
+        #hero-section {
+            &__text {
+                h1 {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        #about-us-section {
+            padding: 5rem 2rem 3rem 2rem;
+        }
+
+        #bestsellers-section {
+            .section-header {
+                margin: 1.5rem 2rem;
+            }
+    
+            &__main {
+                grid-gap: 1.5rem;
+            }
+    
+            &__button {
+                margin: 3rem 2rem 0 2rem;
+            }
+        }
+    
+        .bestsellers {
+            &:first-child {
+                margin-left: 2rem;
+            }
+    
+            &:last-child {
+                margin-right: 2rem;
+            }
+        }
+
+        #make-a-difference-section {
+            padding: 5rem 2rem 2rem 2rem;
+        }
+
+        #stories-section {
+            .section-header {
+                margin: 1.5rem 2rem;
+            }
+
+            &__main {
+                grid-gap: 1.5rem;
+            }
+        }
+
+        .stories {
+            &:first-child {
+                margin-left: 2rem;
+            }
+    
+            &:last-child {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    .footer {
+        &__links-section {
+            padding: 3.5rem 2rem;
+        }
+
+        &__subscribe-section {
+            padding: 2rem;
+
+            &--form {
+                input {
+                    width: 60%;
+                }
+            }
+        }
+
+        &__address {
+            padding: 2rem;
+        }
+    }
+
+    #glasses-collection {
+        .main {
+            padding: 2rem;
+        }
+    }
+
+    .individual-collection {
+        .main {
+            padding: 2rem;
+        }
+    }
+
+    .product-pages {
+        .product__main {
+            margin: 0 0 2rem 0;
+
+            &--image-container {
+                width: 100%;
+                height: 40vh;
+            }
+
+            &--description-container {
+                padding: 0;
+                margin: 2rem;
+            }
+        }
+    }
+
+    .product__review-section {
+        & > h2 {
+            margin-left: 2rem;
+        }
+
+        .product__review-container {
+            grid-gap: 2.5rem;
+        }
+    
+        .reviews {
+            &:first-child {
+                margin-left: 2rem;
+            }
+    
+            &:last-child {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+@include media-sm {
+    .nav {
+        &__fixed {
+            &--center {
+                .links {
+                    justify-content: center;
+
+                    a {
+                        &:first-child {
+                            margin-right: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #home {
+        #hero-section {
+            &__text {
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
+
+        .bestsellers {
+            width: 400px;
+        }
+
+        .stories {
+            width: 400px;
+        }
+    }
+
+    #glasses-collection {
+        .collections-links__container {
+            justify-content: space-between;
+        }
+
+        .collections-links {
+            width: 48% ;
+        }
+    }
+
+    .individual-collection {
+        .products-links__container {
+            justify-content: space-between;
+        }
+
+        .products-links {
+            width: 48%;
+        }
+    }
+}
+
+@include media-md {
+    #home {
+        #hero-section {
+            height: 80vh;
+
+            &__text {
+                h1 {
+                    font-size: 70px;
+                }
+
+                button {
+                    padding: 1.5rem 3rem;
+                }
+            }
+        }
+
+        .bestsellers {
+            width: 500px;
+        }
+
+        .stories {
+            width: 500px;
+        }
+    }
+    
+    .product__review-section {
+        & > h2 {
+            margin-left: 2rem;
+        }
+
+        .product__review-container {
+            grid-gap: 2.5rem;
+        }
+    
+        .reviews {
+            width: 500px;
+        }
+    }
+}
+
+@include media-lg {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+        background-color: $neutral-off-white;
+        padding: 0 1rem;
+        position: relative;
+
+        &__fixed {
+            border-bottom: none;
+            width: fit-content;
+
+            .menu-btn__container {
+                display: none;
+            }
+
+            &--center {
+                .links {
+                    a {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            background-color: $neutral-off-white;
+            position: inherit;
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+
+            transform: translateX(0);
+
+            #{&}--btns {
+                border-bottom: none;
+                margin-left: 3rem;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                .btn-content {
+                    width: 6.5rem;
+                }
+
+                &__menu {
+                    background-color: $neutral-white;
+                    position: relative;
+                    padding: 1rem 3rem;
+                    z-index: 3;
+                    cursor: auto;
+
+                    a {
+                        border: none;
+                        margin-right: 5rem;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &.open {
+                        flex-direction: column;
+                        position: absolute;
+                        // right: 0;
+                        // left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #home {
+        #hero-section {
+            background: url('../../resources/images/hero-section/hero-section-img-desktop.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &__text {
+                button {
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: $green;
+                        background-color: $neutral-white;
+                    }
+                }
+            }
+        }
+
+        #about-us-section {
+            padding: 5rem 3.5rem 3rem 3.5rem;
+        }
+
+        #bestsellers-section {
+            .section-header {
+                margin: 1.5rem 3.5rem;
+            }
+    
+            &__main {
+                grid-gap: 2rem;
+            }
+    
+            &__button {
+                margin: 3rem 3.5rem 0 3.5rem;
+            }
+        }
+
+        .bestsellers {
+            &:first-child {
+                margin-left: 3.5rem;
+            }
+    
+            &:last-child {
+                margin-right: 3.5rem;
+            }
+
+            .name {
+                margin-top: 2.5rem;
+            }
+    
+            .price {
+                margin-top: 1.5rem;
+            }
+        }
+
+        #make-a-difference-section {
+            padding: 5rem 3.5rem 2rem 3.5rem;
+
+            &__main {
+                display: flex;
+                flex-direction: row;
+            }
+
+            &__mission {
+                width: 45%;
+                margin-right: 7rem;
+
+                p {
+                    margin-bottom: 1.5rem;
+                }
+
+                button {
+                    display: block;
+                }
+            }
+
+            &__illustrations {
+                width: 35%;
+
+                & > div {
+                    display: flex;
+
+                    &:first-child {
+                        margin-top: 0;
+                        flex-direction: row-reverse;
+                        
+                        h3, 
+                        p {
+                            margin-left: 4rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        flex-direction: row;
+                        
+                        h3, 
+                        p {
+                            margin-right: 0;
+                        }
+                    }
+
+                    &:last-child {
+                        flex-direction: row-reverse;
+                        
+                        h3, 
+                        p {
+                            margin-left: 4rem;
+                        }
+                    }
+                }
+
+                img {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        #stories-section {
+            .section-header {
+                margin: 1.5rem 3.5rem;
+            }
+
+            &__main {
+                grid-gap: 2rem;
+            }
+        }
+
+        .stories {
+            &:first-child {
+                margin-left: 3.5rem;
+            }
+    
+            &:last-child {
+                margin-right: 3.5rem;
+            }
+        }
+    }
+
+    .footer {
+        position: relative;
+
+        &__links-section {
+            padding: 3.5rem;
+            grid-template-columns: 25% 25%;
+        }
+
+        &__subscribe-section {
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 3.5rem;
+
+            &--form {
+                button {
+                    margin-left: 1.5rem;
+                }
+            }
+
+            &--follow-us {
+                margin-top: 0;
+                margin-left: 7rem;
+
+
+            }
+        }
+
+        &__address {
+            padding: 2rem 3.5rem;
+
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+
+            p {
+                width: 50%;
+                margin-bottom: 0;
+            }
+
+            & > div {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .email {
+                margin-left: 2rem;
+            }
+        }
+
+        .earth-img {
+            position: absolute;
+            top: 3rem;
+            right: 10rem;
+        }
+    }
+
+    #glasses-collection {
+        .main {
+            padding: 2rem 3.5rem;
+        }
+        .collections-links__container {
+            justify-content: space-between;
+        }
+        .collections-links {
+            margin: 1.5rem 0;
+            width: 31%;
+        }
+    }
+
+    .individual-collection {
+        .main {
+            padding: 2rem 3.5rem;
+        }
+
+        .products-links__container {
+            justify-content: space-between;
+        }
+
+        .products-links {
+            margin: 1.5rem 0;
+            width: 31%;
+        }
+    }
+
+    .product-pages {
+        .product__main {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 3rem 3.5rem 5rem 3.5rem;
+
+            &--image-container {
+                aspect-ratio: 0.5;
+                width: 450px;
+                margin-right: 2rem;
+            }
+
+            .colour-select {
+                margin: 3rem 0 2rem 0;
+
+                img {
+                    width: 120px;
+                }
+            }
+        }
+
+        .product__review-section {
+            & > h2 {
+                margin-left: 2rem;
+            }
+    
+            .product__review-container {
+                grid-gap: 3.5rem;
+                padding: 5  rem 0;
+            }
+        
+            .reviews {
+                width: 500px;
+
+                &:first-child {
+                    margin-left: 3.5rem;
+                }
+        
+                &:last-child {
+                    margin-right: 3.5rem;
+                }
+    
+            }
+
+            .review-form {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@include media-xl {
+    .nav {
+        &__menu {
+            #{&}--btns {
+                margin-left: 5rem;
+            }
+        }
+    }
+
+    .footer {
+        .earth-img {
+            right: 15rem;
+        }
+    }
+}
+
+@include media-sl {
+
+}
